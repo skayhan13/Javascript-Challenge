@@ -1,9 +1,9 @@
-// from data.js
+//from data.js
 var tableData = data;
 console.log(tableData);
 
 // Get a reference to the table body
-var tbody = d3.select("tbody");
+var tbody = d3.select("tbody");  //period for a class 
 
 // UFO Sighting values for each column
 tableData.forEach(function(ufoSighting) {
@@ -33,6 +33,7 @@ button.on("click", function() {
     var inputValue = inputElement.property("value");
     // console.log input value
     // console.log(inputValue);
+
     // Filter Data with datetime equal to input value
     var filteredData = tableData.filter(sighting => sighting.datetime === inputValue ||
                                                     sighting.city === inputValue ||
