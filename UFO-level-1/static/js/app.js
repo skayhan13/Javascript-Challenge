@@ -1,6 +1,6 @@
 //from data.js
 var tableData = data;
-console.log(tableData);
+//console.log(tableData);  //all console.log statements are used to test outputs
 
 // YOUR CODE HERE!
 
@@ -9,13 +9,13 @@ var tbody = d3.select("tbody");
 
 // UFO Sighting values for each column
 tableData.forEach(function(ufoSighting) {
-    console.log(ufoSighting);
+    //console.log(ufoSighting);
     // Append one table row `tr` for each UFO Sighting object
     var row = tbody.append("tr");
 
     // Use `Object.entries` to console.log each UFO Sighting value
     Object.entries(ufoSighting).forEach(function([key, value]) {
-      console.log(key, value);
+      //console.log(key, value);
       // Append a cell to the row for each value
       var cell = row.append("td");
       cell.text(value);
@@ -24,7 +24,7 @@ tableData.forEach(function(ufoSighting) {
 
 
 // Select the button
-var button = d3.select("#filter-btn");
+var button = d3.select("#filter-btn");  //what html element are you working with
 button.on("click", function() {
 
     tbody.html("");
@@ -34,21 +34,21 @@ button.on("click", function() {
     // Get the value property of the input date, state, shape
     var inputValue = inputElement.property("value");
     // console.log input value
-    console.log(inputValue);
+    //console.log(inputValue);
     // Filter Data with datetime equal to input value
-    var filteredData = tableData.filter(sighting => sighting.datetime === inputValue);
+    var filteredData = tableData.filter(sighting => sighting.datetime == inputValue);
     // console.log filter values
-    console.log(filteredData);
+    //console.log(filteredData);
 
 
     filteredData.forEach(function(selections) {
 
-    console.log(selections);
+    //console.log(selections);
     // Append one table row `tr` for each UFO Sighting object
     var row = tbody.append("tr");
     // Use `Object.entries` to console.log each UFO Sighting value
     Object.entries(selections).forEach(function([key, value]) {
-        console.log(key, value);
+        //console.log(key, value);
         // Append a cell to the row for each value
         var cell = row.append("td");
         cell.text(value);
