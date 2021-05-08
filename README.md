@@ -21,6 +21,7 @@ You can handle this... right? The planet Earth needs to know what we have found!
 * Make sure you have a column for `date/time`, `city`, `state`, `country`, `shape`, and `comment` at the very least.
 
 * Use a date form in your HTML document and write JavaScript code that will listen for events and search through the `date/time` column to find rows that match user input.
+![fig1](Images/fig1.png)
 
 ### Level 2: Multiple Search Categories (Optional)
 
@@ -33,6 +34,8 @@ You can handle this... right? The planet Earth needs to know what we have found!
   3. `state`
   4. `country`
   5. `shape`
+
+![filter](Images/filter.png)
 
 - - -
 
